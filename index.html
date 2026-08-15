@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jishnu & Anusree - Wedding Invitation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader-container" id="loading-screen">
+        <div class="loader-content">
+            <h1 class="loader-names">Jishnu & Anusree</h1>
+            <p class="loader-subtitle">A Celebration of Love</p>
+
+            <div class="loader-divider-container">
+                <div class="loader-divider"></div>
+                <div class="loader-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="hidden">
+
+        <!-- Sticky Navigation -->
+        <nav id="navbar">
+            <div class="nav-logo">J & A</div>
+            <!--<div class="nav-actions">
+                <a href="#share-section" class="nav-icon-btn" aria-label="Share">
+                    <i class="fas fa-share-alt"></i>
+                </a>
+            </div>-->
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- TO USE LOCAL IMAGES HERE, CHANGE THE URL inside url('') to e.g., 'images/hero-bg.jpg' -->
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop');"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="floating-gallery">
+                <div class="float-img img-1" style="background-image: url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&auto=format&fit=crop');"></div>
+                <div class="float-img img-2" style="background-image: url('./images/img-1.png');"></div>
+                <div class="float-img img-3" style="background-image: url('https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&auto=format&fit=crop');"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-titles">
+                    <h1 class="name-top">Jishnu</h1>
+                    <span class="ampersand">&</span>
+                    <h1 class="name-bottom">Anusree</h1>
+                </div>
+
+                <div class="hero-divider">
+                    <div class="line"></div>
+                    <i class="fas fa-gem gem-icon"></i>
+                    <div class="line"></div>
+                </div>
+
+                <!--<p class="hero-date">Sunday, 30 August 2026</p>
+                <p class="hero-location-text">
+                    <i class="fas fa-map-marker-alt"></i> RAJPALACE AUDITORIUM, POINACHI
+                </p>-->
+
+                <div class="info-pill">
+                    <div class="pill-item">
+                        <i class="far fa-calendar-alt"></i> <span>30 August 2026</span>
+                    </div>
+                    <div class="pill-divider"></div>
+                    <div class="pill-item">
+                        <i class="far fa-clock"></i> <span>11:00 AM</span>
+                    </div>
+                    <div class="pill-divider"></div>
+                    <div class="pill-item">
+                        <i class="fas fa-map-marker-alt"></i> <span>Raj Palace Auditorium, Poinachi</span>
+                    </div>
+                </div>
+
+                <a href="#event-details" class="btn-primary">
+                    <i class="fas fa-heart"></i> VIEW DETAILS
+                </a>
+
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <h2 class="countdown-title">Counting down to our special day</h2>
+            <div class="countdown-container">
+                <div class="timer-box">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Happy Couple Section -->
+        <section class="happy-couple-section">
+            <div class="section-header">
+                <span class="sub-heading">TOGETHER FOREVER</span>
+                <h2 class="main-heading">
+                    <span class="white-serif">The</span> <span class="gold-italic">Happy Couple</span>
+                </h2>
+                <div class="section-divider">
+                    <div class="line"></div>
+                    <div class="diamond-icon"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="couple-container">
+                <div class="person groom">
+                    <span class="role">GROOM</span>
+                    <h3 class="name">Jishnu</h3>
+                    <p class="parent-label">Son of</p>
+                    <p class="parents">Mr. T Madhavan Nair & Mrs. Radha Madhavan</p>
+                </div>
+
+                <div class="center-divider">
+                    <span class="large-ampersand">&</span>
+                    <div class="ring-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="12" r="5"></circle>
+                            <circle cx="15" cy="12" r="5"></circle>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="person bride">
+                    <span class="role">BRIDE</span>
+                    <h3 class="name">Anusree</h3>
+                    <p class="parent-label">Daughter of</p>
+                    <p class="parents">Mr. Madhavan K & Mrs. Prasanna Madhavan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="quote-bg-stars"></div>
+            <div class="large-quote-mark">"</div>
+            <div class="quote-content">
+                <p class="quote-text">
+                    "Two souls, one heart — bound together by love, blessed by God,<br> and celebrated by all who know them."
+                </p>
+                <span class="quote-author">WITH JOY & LOVE</span>
+            </div>
+        </section>
+
+        <!-- Event Details Section -->
+        <section id="event-details" class="event-details-section">
+            <div class="section-header">
+                <span class="sub-heading">MARK YOUR CALENDAR</span>
+                <h2 class="main-heading">
+                    <span class="white-serif">Event</span> <span class="gold-italic">Details</span>
+                </h2>
+                <div class="section-divider">
+                    <div class="line"></div>
+                    <div class="diamond-icon"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="event-cards-container">
+                <div class="event-card">
+                    <div class="card-image-wrapper">
+                        <!-- TO USE A LOCAL IMAGE HERE, CHANGE THE URL inside url('') to e.g., 'images/event-bg.jpg' -->
+                        <div class="card-img" style="background-image: url('images/auditorium.jpeg');"></div>
+                        <div class="card-img-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">
+                            <span class="line-small"></span> WEDDING CEREMONY
+                        </div>
+                        <h3 class="card-date">Sunday, 30<br>August 2026</h3>
+
+                        <ul class="card-info-list">
+                            <li>
+                                <i class="fas fa-clock gold-icon"></i>
+                                <span class="time-italic">11:00 AM - 11:40 AM</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt gold-icon"></i>
+                                <span>Raj Palace Auditorium, Poinachi</span>
+                            </li>
+                            <!--<li>
+                                <i class="fas fa-phone-alt gold-icon"></i>
+                                <span>+91 8547511189</span>
+                            </li>-->
+                        </ul>
+
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Raj+Palace+Auditorium,+F376%2B747,+Poinachi,+Kerala+671541" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                            <i class="fas fa-map-marked-alt"></i> GET DIRECTIONS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="section-header">
+                <span class="sub-heading">PRECIOUS MOMENTS</span>
+                <h2 class="main-heading">
+                    <span class="white-serif">Our</span> <span class="gold-italic">Gallery</span>
+                </h2>
+                <div class="section-divider">
+                    <div class="line"></div>
+                    <div class="diamond-icon"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <!--<div class="gallery-column">
+                    <img src="images/img-1.png" alt="Gallery Image 1" class="gallery-img tall">
+                </div>-->
+                <div class="gallery-column">
+                    <img src="images/img-4.png" alt="Gallery Image 2" class="gallery-img landscape">
+                    <img src="images/img-3.png" alt="Gallery Image 3" class="gallery-img square">
+                </div>
+                <div class="gallery-column">
+                    <img src="images/img-2.png" alt="Gallery Image 2" class="gallery-img landscape">
+                    <!--<img src="images/img-3.png" alt="Gallery Image 3" class="gallery-img square">-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Section -->
+        <!--<section id="share-section" class="share-section">
+            <div class="section-header">
+                <span class="sub-heading">SPREAD THE JOY</span>
+                <h2 class="main-heading">
+                    <span class="white-serif">Share the</span> <span class="gold-italic">Invitation</span>
+                </h2>
+                <div class="section-divider">
+                    <div class="line"></div>
+                    <div class="diamond-icon"></div>
+                    <div class="line"></div>
+                </div>
+                <p class="share-subtitle">Help us share this beautiful moment with family and friends</p>
+            </div>
+
+            <div class="share-buttons-container">
+                <button class="share-btn">
+                    <div class="icon-wrapper whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <span class="share-label">WHATSAPP</span>
+                </button>
+                <button class="share-btn">
+                    <div class="icon-wrapper facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span class="share-label">FACEBOOK</span>
+                </button>
+                <button class="share-btn">
+                    <div class="icon-wrapper twitter">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <span class="share-label">TWITTER</span>
+                </button>
+                <button class="share-btn">
+                    <div class="icon-wrapper copylink">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <span class="share-label">COPY LINK</span>
+                </button>
+            </div>
+        </section>-->
+
+        <!-- Final Footer Section -->
+        <footer class="site-footer">
+            <h2 class="footer-names">Jishnu & Anusree</h2>
+            <p class="footer-date">Sunday, 30 August 2026</p>
+            <div class="footer-divider"></div>
+            <p class="footer-credits">
+                MADE WITH <span class="heart">♥</span><span class="brand"></span>
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Action Button globally placed -->
+    <!-- (Optional) Add a mailto or whatsapp link here -->
+    <!--<a href="#" class="fab-btn" style="display: flex; align-items: center; justify-content: center; text-decoration: none;">
+        <i class="fas fa-paper-plane"></i>
+    </a>-->
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
